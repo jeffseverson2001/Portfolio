@@ -1,4 +1,8 @@
 /*  Main Element Styles */
+header,
+a {
+    color:white;
+}
 
 
 /*  Main Class Styles */
@@ -6,6 +10,7 @@
     display: inline;
     padding: 20px;
     text-decoration: none;
+    color:white;
 }
 
 .header-margin-right {
@@ -15,9 +20,11 @@
 .main-image {
     display: block;
     margin: 50px;
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
     border-radius: 50%;
+    box-shadow: 20px 10px 7px #eef3fc;
+    /* #3273dc; */
 }
 
 .main-header {
@@ -31,6 +38,18 @@
 
 .center {
     text-align: center;
+}
+
+.navStrong {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.project-image {
+    display: block;
+    /* margin: 50px; 
+    max-width: 10%; */
+    height: auto;
 }
 
 /*  Main ID Styles */
