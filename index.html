@@ -5,39 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
 
-    <title>Jeff Severson</title>
+    <title>Jeff Severson Profile</title>
 </head>
 
-<body>
-    <header class="container-fluid">
-        <nav class="navbar sticky-top navbar-dark bg-primary navbar-expand-lg">
-            <ul class="navbar-nav ms-auto mt-2 mt-lg-0 header-margin-right">
-                <li class="nav-item"><a class="nav-link" href='https://github.com/jeffseverson2001'>Github</a></li>
-                <li class="nav-item"><a class="nav-link"
-                        href='https://www.linkedin.com/in/jeff-severson-880a02208/'>LinkedIn</a></li>
-                <li class="nav-item"><a class="nav-link" href='./assets/images/Jeff_Severson_Resume.pdf'>Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href='#contact-box'>Contact</a></li>
-            </ul>
+<body class="has-navbar-fixed-top">
+    <header>
+        <nav class="navbar is-fixed-top is-link" role="navigation">
+            <div class="navbar-menu is-active">
+                <div class="navbar-brand">
+                    <i class="navbar-item fas fa-battery-three-quarters fa-3x" style="color:white"></i>
+                </div>
+                <div class="navbar-start">
+                    <div class="navbar-item navStrong has-text-light">Jeff Severson</div>
+                </div>
+                <div class="navbar-end">
+                    <a href="#home-page" class="navbar-item has-text-light">Homepage</a>
+                    <a href="https://github.com/jeffseverson2001" class="navbar-item has-text-light">Github</a>
+                    <a href='https://www.linkedin.com/in/jeff-severson-880a02208/'
+                        class="navbar-item has-text-light">LinkedIn</a>
+                    <a href="#project-box" class="navbar-item has-text-light">Projects</a>
+                    <a href="./assets/images/Jeff_Severson_Resume.pdf" class="navbar-item has-text-light">Resume</a>
+                    <a href="#contact-info" class="navbar-item has-text-light">Contact</a>
+                </div>
+            </div>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </nav>
     </header>
+
     <main>
-        <img src="./assets/images/Jeff_Blue.jpg" class="main-image mx-auto d-block" alt="Responsive image">
-        <!--- img-fluid mx-auto d-block  -->
-        <div class="main-text center">Hello my name is:</div>
-        <div class="main-header center">Jeff Severson</div>
-        <div class="main-text center"><br>
-            I am currently enrolled at the University of Minnesota coding boot-camp learning to be a full stack web
-            developer.<br>
-            This site is still a work in progress so I thought I would show the progress with a battery icon.
-        </div>
-        <div class="center">
-            <i class="fas fa-battery-quarter fa-5x"></i>
-        </div>
+        <figure class="image">
+            <img src="./assets/images/Jeff_Blue.jpg" class="main-image is-rounded mx-auto" alt="Jeff Severson Image">
+        </figure>
+
+        <section class="content">
+            <div class="content m-6">
+                <h2>The Web Developer</h2>
+                <p>
+                    I'm a web developer from Anoka, Minnesota and I have spent the last 10+ years as a backend PHP MYSQL
+                    developer. I decided that it was time to
+                    make the leap to become a full stack developer, and am now certified in HTML, CSS and
+                    jQuery/JavaScript.<br><br>
+                    I really enjoy helping small businesses find ways to improve their processes by using web
+                    technologies. I also enjoy spending time with my wife and dogs when I am not watching football.<br>
+                    I am currently finishing my official web developer training at the University of Minnesota full
+                    stack web developer coding boot-camp.
+                </p>
+            </div>
+        </section>
+
+
+        <secion class="container is-flex-direction-row">
+            <div class="columns is-mobile is-centered" id="project-box">
+                <div class="column is-one-quarter has-background-link-light m-5">
+                    <i class="fas fa-battery-quarter fa-2x mb-4"></i>
+                    <a href="https://jeffseverson2001.github.io/03-JavaScript-Password-Generator/"><i
+                            class="fa fa-link fa-2x mb-4" aria-hidden="true"></i></a>
+                    <a href="https://github.com/jeffseverson2001/03-JavaScript-Password-Generator"><i
+                            class="fab fa-github fa-2x mb-4"></i></a>
+                    <img src="./assets/images/password.jpg" class="project-image mx-auto" alt="Movie Site Image">
+                    <div class="center-sites"> Password Generator </div>
+                </div>
+                <div class="column is-one-quarter has-background-link-light m-5">
+                    <i class="fas fa-battery-half fa-2x mb-4"></i>
+                    <a href="https://jeffseverson2001-mvc-homework.herokuapp.com/"><i class="fa fa-link fa-2x mb-4"
+                            aria-hidden="true"></i></a>
+                    <a href="https://github.com/jeffseverson2001/14-MVC-Blog"><i
+                            class="fab fa-github fa-2x mb-4"></i></a>
+                    <img src="./assets/images/blog.jpg" class="project-image mx-auto" alt="Blog Site Image">
+                    <div class="center-sites"> jBlog Site </div>
+                </div>
+                <div class="column is-one-quarter has-background-link-light m-5">
+                    <i class="fas fa-battery-full fa-2x mb-4"> </i>
+                    <a href="https://jeffseverson2001.github.io/what-should-i-watch/"><i class="fa fa-link fa-2x mb-4"
+                            aria-hidden="true"></i></a>
+                    <a href="https://github.com/jeffseverson2001/what-should-i-watch"><i
+                            class="fab fa-github fa-2x mb-4"></i></a>
+                    <img src="./assets/images/movie.jpg" class="project-image mx-auto" alt="Movie Site Image">
+                    <div class="center-sites"> What Should I Watch </div>
+                </div>
+            </div>
+        </secion>
+
+
+
+        <footer class="footer has-background-link" id="contact-info">
+            <div class="container is-fluid">
+                <div class="content has-text-centered is-size-6">
+                    <a href="#contact-info" class="white-text"><i class="fas fa-phone-square-alt"></i> 763-220-0777</a>
+                    |
+                    <a href="mailto:jeff@jefflizseverson.com" class="white-text"><i class="far fa-envelope"></i>
+                        jeff@jefflizseverson.com</a> |
+                    <a href="https://github.com/jeffseverson2001" class="white-text"><i class="fab fa-github"></i>
+                        jeffseverson2001</a>
+                </div>
+            </div>
+        </footer>
 
     </main>
     <script src="https://use.fontawesome.com/5843fe725a.js"></script>
